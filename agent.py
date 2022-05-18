@@ -4,9 +4,9 @@ import torch.nn as nn
 import torch.optim as optim
 import numpy as np
 
-from NetworkReplay import DeepQNetwork, ReplayBuffer
+from networkreplay import DeepQNetwork, ReplayBuffer
 
-class DDQNAgent():
+class doubleDQNAgent():
     def __init__(self, gamma, lr, n_actions, n_states, 
                 batch_size, mem_size, replace, saved_dir, env_name):
         self.gamma = gamma
